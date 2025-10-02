@@ -7,34 +7,6 @@ body {
     font-family: sans-serif;
    }
 
- #gekleurd-blok {
-    @media (min-width: 690px) {
-        display: flex;
-        gap: 30px;
-   }
- }
-
- .button-lees-meer {
-    @media (min-width: 690px) {
-        display: flex;
-        justify-content: center;
-   }
-}
-
-#drieknoppen {
-    @media (min-width: 690px) {
-        display: flex;
-        justify-content: space-around;
-   }
-}
-
-#laatstenieuws {
-    @media (min-width: 690px) {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
 
 .main-nav {
     background-color: #317073;
@@ -45,11 +17,13 @@ body {
     grid-row: 1;
 }
 
-
 h1 {
     text-align: center;
 }
 
+h2 {
+    text-align: center;
+}
 
 .sub-nav {
     display: grid;
@@ -57,7 +31,15 @@ h1 {
 }
 
 
-.button-lees-meer {
+ #gekleurd-blok {
+    @media (min-width: 690px) {
+        display: flex;
+        gap: 30px;
+   }
+ }
+
+
+.button-lees-meer { 
     background-color: #317073;
     color:rgb(255, 255, 255);
     border: none;
@@ -68,42 +50,80 @@ h1 {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     max-width: 150px;
     margin-bottom: 40px;
+
+    @media (min-width: 690px) {
+        display: flex;
+        justify-content: center;
+   }
 }
+
+.button-lees-meer:hover {
+    background-color:#5db2b7
+}
+
+
+#drieknoppen {
+    text-align: center;
+
+    @media (min-width: 690px) {
+        display: flex;
+        justify-content: space-around;
+        padding: 7 90px;
+   }
+}
+
 
 .button-wat-is-een-ad {
     background-color: #317073;
     color:rgb(255, 255, 255);
     border: none;
     border-radius: 15px;
-    padding: 7px 25px;
+    padding: 7px 70px;
     text-decoration: none;
     font-style: 12pt;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     max-width: 300px;
 }
 
+
+.button-wat-is-een-ad:hover{
+    background-color: #5db2b7
+}
+
+
 .button-doorstroom {
     background-color: #D09482;
     color:rgb(255, 255, 255);
     border: none;
     border-radius: 15px;
-    padding: 7px 25px;
+    padding: 7px 70px;
     text-decoration: none;
     font-style: 12pt;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     max-width: 200px;
 }
 
+
+.button-doorstroom:hover {
+    background-color: #f3c2b3;
+}
+
+
 .button-ad-talent-award {
     background-color: #317073;
     color:rgb(255, 255, 255);
     border: none;
     border-radius: 15px;
-    padding: 7px 25px;
+    padding: 7px 70px;
     text-decoration: none;
     font-style: 12pt;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     max-width: 200px;
+}
+
+
+.button-ad-talent-award:hover {
+    background-color:#5db2b7
 }
 
 
@@ -123,22 +143,49 @@ h1 {
     text-decoration: none;
 }
 
+.vergaderingen {
+    text-align:center;
+
+    @media (min-width: 690px) {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       justify-items: center;
+       padding-top: 35px;
+    }
+}
+ 
+
 .vergaderingen li {
     list-style: none;
-
+    text-align: center;
 }
 
 .vergaderingen ul {
     margin: 0;
-    padding-left: 0
+    padding-left: 0;
+    text-align: center;
+    
+}
+
+#laatstenieuws {
+
+    @media (min-width: 690px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 .dagelijks-bestuur li {
     list-style: none;
 }
 
+
 .dagelijks-bestuur ul {
     margin: 0;
     padding-left: 0
 }
 
+.logoshogescholen {
+    display: flex;
+    justify-content: center;
+}
