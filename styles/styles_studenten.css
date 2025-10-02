@@ -1,0 +1,75 @@
+/* CSS */
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16pt;
+    line-height: 1.4;
+    font-family: sans-serif;
+}
+
+.main-nav {
+    background-color: #317073;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column: 1/-1;
+    grid-row: 1;
+}
+
+h1 {
+    text-align: center;
+}
+
+.sub-nav {
+    display: grid;
+    border-bottom: 2px solid #317073;
+}
+
+
+.button-lees-meer {
+    background-color: #317073;
+    color:rgb(255, 255, 255);
+    border: none;
+    border-radius: 15px;
+    padding: 7px 25px;
+    text-decoration: none;
+    font-style: 12pt;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.p-kleur {
+    color: rgb(0, 0, 0);
+}
+
+.button-wat-is-een-ad {
+    text-decoration: none;
+}
+
+.button-doorstroom {
+    text-decoration: none;
+}
+
+.button-ad-talent-award {
+    text-decoration: none;
+}
+
+.vergaderingen li {
+    list-style: none;
+
+}
+
+.vergaderingen ul {
+    margin: 0;
+    padding-left: 0
+}
+
+.dagelijks-bestuur li {
+    list-style: none;
+}
+
+.dagelijks-bestuur ul {
+    margin: 0;
+    padding-left: 0
+}
+
