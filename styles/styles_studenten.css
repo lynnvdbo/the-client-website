@@ -7,7 +7,6 @@ body {
     font-family: sans-serif;
    }
 
-
 .main-nav {
     background-color: #317073;
     display: grid;
@@ -22,7 +21,6 @@ body {
     border-bottom: 2px solid #317073;
 }
 
-
 h1 {
     text-align: center;
     padding-left: 10px;
@@ -33,7 +31,6 @@ h2 {
     text-align: center;
     /* border-bottom: 2px solid #317073; */
 }
-
 
  #gekleurd-blok {
     background-color: #D09482;
@@ -65,7 +62,6 @@ h2 {
     padding-bottom: 10px;
 }
 
-
 .button-lees-meer { 
     background-color: #ffffff;
     color: #000000;
@@ -95,7 +91,6 @@ h2 {
     background-color:#5db2b7;
 }
 
-
 #drieknoppen {
     display: flex;
     flex-direction: column;
@@ -112,7 +107,6 @@ h2 {
         padding: 7 90px;
    }
 }
-
 
 .button-wat-is-een-ad {
     background-color: #317073;
@@ -197,12 +191,6 @@ h2 {
        padding-top: 35px;
     }
 }
- 
-
-.vergaderingen li {
-    list-style: none;
-    text-align: center;
-}
 
 .vergaderingen ul {
     margin: 0;
@@ -210,6 +198,12 @@ h2 {
     text-align: center;
     
 }
+
+.vergaderingen li {
+    list-style: none;
+    text-align: center;
+}
+
 
 .vergaderingen img {
     border-radius: 20px;
@@ -224,8 +218,6 @@ h2 {
         grid-template-columns: 1fr 1fr;
     }
 }
-
-
 
 .article-1 {
     border: 6px solid #D09482;
