@@ -16,21 +16,58 @@ body {
     grid-row: 1;
 }
 
-.sub-nav {
-    display: grid;
-    border-bottom: 2px solid #317073;
-}
 
 .logoadconnect {
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 15px;
+    margin-left: 10px;
+
 }
+.sub-nav {
+    display: flex;
+    border-bottom: 2px solid #317073;
+
+}
+
+.sub-nav img {
+       @media (min-width: 1150px) {
+        width: 300px;
+        padding-left: 40px;
+    }
+}
+
+
+.menu {
+    padding-left: 500px;
+    padding-top: 30px;
+    font-size: 18px;
+
+}
+
+
+.menu ul {
+   display: none;
+   text-decoration: none;
+
+      @media (min-width: 1150px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5em;
+        /* justify-content: space-around; */
+        list-style: none;
+    }
+}
+
 
 h1 {
     text-align: center;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+      @media (min-width: 1150px) {
+        font-size: 40px;
+    }
 }
 
 h2 {
@@ -39,6 +76,7 @@ h2 {
 }
 
  #gekleurd-blok {
+    grid-template-columns: 1fr 1fr;
     background-color: #D09482;
     height: 545px;
     padding-top: 8px;
@@ -48,14 +86,13 @@ h2 {
     @media (min-width: 690px) {
         display: flex;
         gap: 30px;
-        height: 285px;
+        height: 340px;
         margin-bottom: 25px;
    }
 
-
-       @media (min-width: 810px) {
-       height: 350px;
-   }
+    @media (min-width: 1700px) {
+        height: 340px;
+    }
 
  }
 
@@ -65,6 +102,14 @@ h2 {
     padding-right: 20px;
     padding-left: 20px;   
     padding-top: 5px; 
+
+      @media (min-width: 1150px) {
+        padding-top: 40px; 
+        padding-right: 60px;
+        padding-left: 150px; 
+        font-size: 18px;  
+
+    }
 }
 
 .p-kleur2 {
@@ -72,7 +117,17 @@ h2 {
     padding-right: 20px;
     padding-left: 20px;
     padding-bottom: 10px;
+
+       @media (min-width: 1150px) {
+         padding-top: 40px; 
+         padding-right: 150px;
+         padding-left: 60px; 
+         font-size: 18px;  
+
+    }
 }
+
+
 
 .button-lees-meer { 
     background-color: #ffffff;
@@ -82,14 +137,13 @@ h2 {
     text-decoration: none;
     font-style: 16pt;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    max-width: 150px;
-    margin-bottom: 40px; 
     /*breedte van de knop*/
     padding-top: 8px; 
     padding-right: 25px; 
     padding-bottom: 8px; 
-    padding-left: 25px;   
+    padding-left: 20px;   
     /*witruimte linkerkant*/
+    margin-bottom: 40px; 
     margin-left: 20px;
     position: absolute;
     left: 20px;
@@ -97,15 +151,22 @@ h2 {
     text-align: center;
 
 
+
     @media (min-width: 690px) {
-        display: flex;
-        justify-content: center;
+        left: 250px;
+        top: 57%;
+
    }
 
-    @media (min-width: 810px) {
-        display: flex;
-        justify-content: center;
-   }
+
+    /* @media (min-width: 810px) {
+         margin-left: 20px;
+         position: absolute;
+         left: 300px;
+         top: 45%;
+         text-align: center;
+
+   } */
 
 
 }
@@ -126,8 +187,15 @@ h2 {
 
     @media (min-width: 690px) {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         padding: 7 90px;
+   }
+
+
+   @media (min-width: 1000px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
    }
 }
 
@@ -141,6 +209,11 @@ h2 {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-top: 10px; 
     padding-bottom: 10px; 
+
+       @media (min-width: 1000px) {
+        padding-left: 90px;
+        padding-right: 90px;
+   }
 }
 
 
@@ -160,6 +233,11 @@ h2 {
     padding-top: 10px; 
     padding-bottom: 10px; 
 
+        @media (min-width: 1000px) {
+          padding-left: 90px;
+          padding-right: 90px;
+   }
+
 }
 
 
@@ -178,6 +256,12 @@ h2 {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-top: 10px; 
     padding-bottom: 10px;
+
+
+        @media (min-width: 1000px) {
+          padding-left: 90px;
+          padding-right: 90px;
+   }
 }
 
 
@@ -201,6 +285,11 @@ h2 {
 #gekleurd-blok2 {
     background-color: #F4F0E5;
     height: 530px;
+
+      @media (min-width: 690px) {
+        height: 350px;
+    
+    }
 }
 
 .vergaderingen {
@@ -209,9 +298,16 @@ h2 {
 
     @media (min-width: 690px) {
        display: grid;
-       grid-template-columns: 1fr 1fr;
+       grid-template-columns: 1fr;
        justify-items: center;
-       padding-top: 35px;
+       padding-top: 30px;
+    }
+}
+
+.vergaderingen h2 {
+     @media (min-width: 690px) {
+      grid-column: 1/2;
+      grid-row: 1/2;
     }
 }
 
@@ -219,19 +315,59 @@ h2 {
     margin: 0;
     padding-left: 0;
     text-align: center;
-    
+
+     @media (min-width: 690px) {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      padding-top: 80px;
+    }
 }
 
 .vergaderingen li {
     list-style: none;
-    text-align: center;
+    text-align: center;   
 }
 
 
 .vergaderingen img {
-    border-radius: 20px;
-    margin-top: 20px;
+    border-radius: 20px;    
+       
+    @media (min-width: 690px) {
+      grid-column: 2/2;
+      grid-row: 2/1;
+      width: 300px;
+      margin-right: 50px;
+    }
 }
+
+
+.vergaderingen p {     
+    
+    @media (min-width: 690px) {
+      grid-column: 2/2;
+      grid-row: 2/2;
+    }
+}
+
+
+.locatie {     
+    
+    @media (min-width: 690px) {
+      grid-column: 2/2;
+      grid-row: 2/1;
+      margin-right: 50px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 #laatstenieuws {
@@ -239,6 +375,7 @@ h2 {
     @media (min-width: 690px) {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 }
 
@@ -293,6 +430,9 @@ h2 {
 
 .article-2 p {
     text-align: center;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 
@@ -363,6 +503,9 @@ h2 {
 
 .article-4 p {
     text-align: center;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 
@@ -386,6 +529,7 @@ h2 {
 .button-lees-meer-4:hover{
     background-color:#f3c2b3;
 }
+
 
 
 .croppedlogo1 {
@@ -476,7 +620,6 @@ footer a :hover {
     color: #f3c2b3;
 
 }
-
 
 h3 {
     font-size: 16px;
