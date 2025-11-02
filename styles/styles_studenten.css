@@ -7,8 +7,13 @@ body {
     font-family: sans-serif;
 }
 
+:root {
+    --hoofd-kleur: #317073;
+    --accent-kleur: #D09482;
+}
+
 .main-nav {
-    background-color: #317073;
+    background-color: var(--hoofd-kleur);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -71,7 +76,7 @@ body {
 .sub-nav {
     display: flex;
     justify-content: space-between;
-    border-bottom: 2px solid #317073;
+    border-bottom: 2px solid var(--hoofd-kleur);
 
 }
 
@@ -154,7 +159,7 @@ h2 {
 }
 
  #gekleurd-blok {
-    background-color: rgba(208, 148, 130, 100); 
+    background-color: var(--accent-kleur);
     padding-top: 8px;
     padding-left: 20px;
     padding-right: 20px;
@@ -254,7 +259,7 @@ h2 {
 
 
 .button-lees-meer:hover {
-    background-color:#317073;
+    background-color: var(--hoofd-kleur);
     color: white;
 }
 
@@ -283,7 +288,7 @@ h2 {
 }
 
 .button-wat-is-een-ad {
-    background-color: #317073;
+    background-color: var(--hoofd-kleur);
     color:rgb(255, 255, 255);
     border: none;
     border-radius: 20px;
@@ -307,7 +312,7 @@ h2 {
 
 
 .button-doorstroom {
-    background-color: #D09482;
+    background-color: var(--accent-kleur);
     color:rgb(255, 255, 255);
     border: none;
     border-radius: 20px;
@@ -331,7 +336,7 @@ h2 {
 
 
 .button-ad-talent-award {
-    background-color: #317073;
+    background-color: var(--hoofd-kleur);
     color:rgb(255, 255, 255);
     border: none;
     border-radius: 20px;
@@ -386,12 +391,6 @@ h2 {
        justify-items: center;
        padding-top: 30px;
     }
-
-         @media (min-width: 1300px) {
-            display: grid; 
-            grid-template-columns: 1fr 1fr; 
-    }
-
 }
 
 
@@ -478,7 +477,7 @@ h2 {
 }
 
 .article-1 {
-    border: 6px solid #D09482;
+    border: 6px solid var(--accent-kleur);
     border-radius: 20px;
     margin-bottom: 50px;
     margin-left: 20px;
@@ -507,7 +506,7 @@ h2 {
 }
 
 .button-lees-meer-1 { 
-    background-color: #317073;
+    background-color: var(--hoofd-kleur);
     color: #ffffff;
     border: none;
     border-radius: 20px;
@@ -533,7 +532,7 @@ h2 {
 
 
 .article-2 {
-    border: 6px solid #317073;
+    border: 6px solid var(--hoofd-kleur);
     border-radius: 20px;
     margin-bottom: 50px;
     margin-left: 20px;
@@ -562,7 +561,7 @@ h2 {
 
 
 .button-lees-meer-2 { 
-    background-color: #D09482;
+    background-color: var(--accent-kleur);
     color: #ffffff;
     border: none;
     border-radius: 20px;
@@ -587,7 +586,7 @@ h2 {
 }
 
 .article-3 {
-    border: 6px solid #D09482;
+    border: 6px solid var(--accent-kleur);
     border-radius: 20px;
     margin-bottom: 50px;
     margin-left: 20px;
@@ -610,7 +609,7 @@ h2 {
 }
 
 .button-lees-meer-3 { 
-    background-color: #317073;
+    background-color: var(--hoofd-kleur);
     color: #ffffff;
     border: none;
     border-radius: 20px;
@@ -636,7 +635,7 @@ h2 {
 
 
 .article-4 {
-    border: 6px solid #317073;
+    border: 6px solid var(--hoofd-kleur);
     border-radius: 20px;
     margin-left: 20px;
     margin-right: 20px;
@@ -665,7 +664,7 @@ h2 {
 
 
 .button-lees-meer-4{ 
-    background-color: #D09482;
+    background-color: var(--accent-kleur);
     color: #ffffff;
     border: none;
     border-radius: 20px;
@@ -743,7 +742,7 @@ h2 {
 
 
 footer {
-    background-color: #317073;
+    background-color: var(--hoofd-kleur);
     color: #ffffff;
     height: 320px;
     padding-right: 20px;
